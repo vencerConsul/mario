@@ -166,6 +166,10 @@ header .buttons {
   margin: 40px 0 20px;
 }
 
+header .buttons .btn {
+  font-size: 21px;
+}
+
 /* End Header Styles*/
 
 /* Section Content (main) */
@@ -173,6 +177,23 @@ header .buttons {
 #why-mario {
   background: url("./images/main/gridBg.jpg") center center no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+#why-mario::after {
+  content: "";
+  background: #0B0522;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#why-mario .row {
+  position: relative;
+  z-index: 1;
 }
 
 #why-mario .content-wrapper {
@@ -199,11 +220,11 @@ header .buttons {
   border-radius: 50px;
   width: 40px;
   height: 5px;
-  margin: 0 auto 30px;
+  margin: 0 auto 40px;
 }
 
 #why-mario .slider-carousel {
-  margin: 80px 0 70px;
+  margin: 60px 0 70px;
 }
 
 /* Carousel Styles */

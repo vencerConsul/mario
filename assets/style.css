@@ -298,7 +298,7 @@ header .buttons {
 }
 
 #roadmap .number-box {
-  border: 3px solid #ffffff;
+  border: 3px solid #6b6b6b;
   width: 80px;
   height: 80px;
   display: flex;
@@ -309,14 +309,23 @@ header .buttons {
 }
 
 #roadmap .number-box span {
-  color: #ffffff;
+  color: #6b6b6b;
   font-size: 40px;
+}
+
+#roadmap .goals .flex.default .number-box{
+  border: 3px solid #ffffff;
+}
+
+#roadmap .goals .flex.default .number-box span{
+  color: #ffffff;
 }
 
 #roadmap .goals .flex {
   margin: 0 0 100px;
   justify-content: space-between;
   column-gap: 20px;
+  cursor: pointer;
 }
 
 #roadmap h2 {
@@ -346,6 +355,14 @@ header .buttons {
   position: absolute;
   right: -110px;
   bottom: 135px;
+  transition: 0.3s ease-in-out;
+}
+
+#roadmap .flag.first {
+  bottom: 544px;
+}
+#roadmap .flag.second {
+  bottom: 333px;
 }
 
 #roadmap .pole img {
@@ -411,7 +428,8 @@ footer .socials .flex img:hover {
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  box-shadow: 10px 10px 5px #888888;
+  -webkit-filter: drop-shadow(5px 5px 5px #888888);
+  filter: drop-shadow(5px 5px 5px #888888);
 }
 
 footer .disclaimer {

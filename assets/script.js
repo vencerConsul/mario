@@ -62,3 +62,32 @@ var myDonutChart = new Chart(ctx, {
   data: data,
   options: options,
 });
+
+
+
+// goal daww
+const goalFlag = document.querySelector("#roadmap .flag");
+const goalContainer = document.querySelector(".goal-container");
+const goalItems = goalContainer.querySelectorAll(".flex");
+
+goalItems.forEach((el, key) => {
+  el.addEventListener("click", () => {
+    // remove default class to all el
+    goalItems.forEach((s) => {
+      s.classList.remove("default");
+    });
+
+    el.classList.add("default");
+
+    if (key == 0) {
+      goalFlag.classList.add("first");
+      goalFlag.classList.remove("second");
+    } else if (key == 1) {
+      goalFlag.classList.remove("first");
+      goalFlag.classList.add("second");
+    } else {
+      goalFlag.classList.remove("first");
+      goalFlag.classList.remove("second");
+    }
+  });
+});

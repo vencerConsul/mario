@@ -80,9 +80,8 @@ img {
 }
 
 header {
-  background: url("./images/header/movingBanner-bg.gif") center center no-repeat;
-  background-size: cover;
-  padding: 0 0 60px;
+  position: sticky;
+  top: 0;
 }
 
 header .main-logo img {
@@ -95,8 +94,6 @@ header nav.flex {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
 }
 
 header ul.flex {
@@ -115,21 +112,28 @@ header ul li a {
   color: #1e1e1e;
 }
 
-header .content.flex {
-  max-width: 1320px;
-  width: 100%;
-  margin: 75px auto 0;
-  justify-content: space-between;
-  align-items: center;
+#hero {
+  background: url("./images/header/movingBanner-bg.gif") center center no-repeat;
+  background-size: cover;
+  padding: 0 0 60px;
 }
 
-header .content.flex .hero-img img {
+#hero .content.flex {
+  max-width: 1320px;
+  width: 100%;
+  padding: 170px 0 0;
+  justify-content: space-between;
+  align-items: center;
+  margin: -115px 0 0;
+}
+
+#hero .content.flex .hero-img img {
   max-width: 567px;
   height: 474px;
   border-radius: 20px;
 }
 
-header .title-text {
+#hero .title-text {
   background: #ffffffba;
   padding: 30px 30px;
   max-width: 705px;
@@ -138,37 +142,37 @@ header .title-text {
   box-shadow: inset 0 2px 8px #272525;
 }
 
-header .title-text h2 {
+#hero .title-text h2 {
   font-size: 80px;
   text-shadow: 5px 6px 2px #1e1e1e;
   margin: 0 0 30px;
 }
 
-header h2 span.red {
+#hero h2 span.red {
   color: #fe2b22;
 }
 
-header h2 span.yellow {
+#hero h2 span.yellow {
   color: #fdd305;
 }
 
-header .title-text h3 {
+#hero .title-text h3 {
   font-size: 30px;
   color: #1e1e1e;
   margin: 0 0 30px;
 }
 
-header .title-text p {
+#hero .title-text p {
   font-size: 26px;
   font-weight: 600;
   color: #1e1e1e;
 }
 
-header .buttons {
+#hero .buttons {
   margin: 40px 0 20px;
 }
 
-header .buttons .btn {
+#hero .buttons .btn {
   font-size: 21px;
 }
 

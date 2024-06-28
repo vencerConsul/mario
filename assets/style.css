@@ -125,7 +125,7 @@ header ul li a {
   padding: 170px 0 0;
   justify-content: space-between;
   align-items: center;
-  margin: -115px 0 0;
+  margin: -115px auto 0;
 }
 
 #hero .content.flex .hero-img img {

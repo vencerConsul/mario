@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario Project | Home</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="flex">
+        <div class="main-logo">
+          <img src="assets/images/header/logo.PNG" alt="Logo" />
+        </div>
+
+        <ul class="flex">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Marionomics</a></li>
+          <li><a href="#">Roadmap</a></li>
+          <li><a href="#">Socials</a></li>
+        </ul>
+      </nav>
+
+      <div class="content flex">
+        <div class="hero-img">
+          <img src="./assets/images/header/hero-banner.png" alt="Hero Banner" />
+        </div>
+
+        <div class="title-text">
+          <h3>Mario on Sol</h3>
+          <h2>
+            <span class="red">TIRED OF RUGS?</span>
+            <span class="yellow">COLLECT COINS INSTEAD!</span>
+          </h2>
+          <p>It’s the only legit mario coin in Solana</p>
+
+          <div class="buttons">
+            <a href="#" class="btn">JOIN TELEGRAM</a>
+            <a href="#" class="btn">BUY SOON</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div id="why-mario">
+        <div class="row">
+          <div class="content-wrapper">
+            <h2>WHY MARIO?</h2>
+            <hr />
+            <p>
+              This is a passion project, made by Web3 enthusiasts that survived
+              countless rugs, even the $Mario pre-sale. 
+            </p>
+            <p>
+              Honestly, we are just angry about the multiple rugs and the waste
+              of the $Mario ticker. We finally had enough. We will do it
+              ourselves.
+            </p>
+            <div class="slider-carousel">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="flex">
+                      <img src="assets/images/slider/1.PNG" alt="" />
+                      <img src="assets/images/slider/2.PNG" alt="" />
+                      <img src="assets/images/slider/3.PNG" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex">
+                      <img src="assets/images/slider/4.PNG" alt="" />
+                      <img src="assets/images/slider/5.PNG" alt="" />
+                      <img src="assets/images/slider/6.PNG" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex">
+                      <img src="assets/images/slider/7.PNG" alt="" />
+                      <img src="assets/images/slider/8.PNG" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="marionomics">
+        <div class="row">
+          <div class="content-wrapper">
+            <h2>MARIONOMICS</h2>
+            <div style="width: 432px; height: 432px; margin: auto">
+              <canvas id="myDonutChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="roadmap">
+        <div class="row flex">
+          <div class="flagPole">
+            <div class="pole">
+              <img src="assets/images/main/Pole.png" alt="" />
+              <div class="flag">
+                <img src="assets/images/main/Flag.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="goals">
+            <h2>Roadmap</h2>
+            <div class="flex">
+              <div class="number-box">
+                <span>3</span>
+              </div>
+              <div class="title">
+                <h2>Goal!</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="number-box">
+                <span>2</span>
+              </div>
+              <div class="title">
+                <h2>Development Starts</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex default">
+              <div class="number-box">
+                <span>1</span>
+              </div>
+              <div class="title">
+                <h2>Launch</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="socials">
+          <h2>SOCIALS</h2>
+          <p>Connect with us:</p>
+          <div class="flex">
+            <img src="assets/images/footer/Twitter.png" alt="" />
+            <img src="assets/images/footer/Telegram.png" alt="" />
+            <img src="assets/images/footer/Dex.png" alt="" />
+          </div>
+        </div>
+        <div class="disclaimer">
+          <h3>Disclaimer</h3>
+          <p>
+            Mario is a Memecoin. It is volatile. We are not responsible for the
+            token price. Do not risk money you are afraid of losing.
+          </p>
+          <div class="copyright">
+            <p>Copyright: Mari0 2024</p>
+            <p>
+              Powered by: <a href="https://smithii.io/">https://smithii.io/</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        slidesperView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

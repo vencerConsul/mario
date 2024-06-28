@@ -406,6 +406,7 @@ header .buttons .btn {
 footer {
   background: url("./images/main/gridBg.jpg") center center no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 footer::after {

@@ -182,7 +182,7 @@ header .buttons .btn {
 
 #why-mario::after {
   content: "";
-  background: #0B0522;
+  background: #0b0522;
   width: 100%;
   height: 100%;
   opacity: 0.7;
@@ -408,6 +408,17 @@ footer {
   background-size: cover;
 }
 
+footer::after {
+    content: "";
+    background: #0B0522;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 footer .row {
   padding: 0 0 100px;
 }
@@ -490,6 +501,8 @@ footer .copyright p:nth-child(2) {
 
 /* Responsive Mode */
 
-#marionomics {
+@media screen and (max-width: 1440px) {
+  #marionomics {
     height: 840px;
+  }
 }
